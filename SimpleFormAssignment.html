@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Form Assignment</title>
+    <link rel="stylesheet" href="formstyle.css">
+  </head>
+  <body>
+    <h1>fill in your Information</h1>
+    <form name="simpleform" onsubmit="return validateForm()" method="post" >
+      <fieldset>
+        <legend>Information</legend>
+        <label for="fullname">Fullname</label>
+        <input type="text" name="fullname" id="fullname" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"required>
+        <label for="number">Phone Number </label>
+        <input type="tel" name="phone" id="phone"required>
+        <label for="male"> Male</label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="female"> Female</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"required>
+        <input type="submit" value="Submit" onclick="onclickFunction()" href="sucsub.html">
+      </fieldset>
+    </form>
+
+    <script src="formscript.js"> </script>
+  </body>
+</html>
